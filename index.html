@@ -1,4 +1,4 @@
-<!DOCTYPE html!>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -22,17 +22,24 @@
         <fieldset>
           <legend>Contact Information</legend>
 
-          <label for="fullname">Full Name</label>
-          <input required type="name" id="fullname" name="user_name" placeholder="Required" ><br>
+          <label for="name">Full Name</label>
+          <input  type="text" id="name" name="user_name" required placeholder="Required" >
 
           <label for="email">Email Address</label>
-          <input required type="email" id="email" name="email_address" placeholder="Required" ><br>
+          <input type="email" id="email" name="email_address" required placeholder="Required" >
 
           <label for="telephone">Phone Number</label>
-          <input required type="telephone" id="telephone" name="phone_number" ><br>
+          <input  type="text" id="telephone" name="phone_number" placeholder="Not required">
+
+          <label for="street">Street Address</label>
+          <input  type="text" id="street" name="street_number" required placeholder="Required" >
+
+          <label for="city">City</label>
+          <input  type="text" id="city" name="city_name" required placeholder="Required" >
+
 
           <label for="state" >State</label>
-          <select id="state" name="choose_state"><br>
+          <select id="state" name="choose_state">
             <option value="choose">Choose State</option>
             <option value="alabama">Alabama</option>
             <option value="alaska">Alaska</option>
@@ -88,40 +95,38 @@
           </select>
           <br>
           <label for="zipcode">Zipcode</label>
-            <input type="zipcode" id="zipcode" name="zipcode_number">
+            <input type="text" id="zipcode" name="zipcode_number" required placeholder="Required">
 </fieldset>
 
-<fieldset class="newsletter">
+<section>
+  <fieldset class="newsletter">
+  <legend class="heading">Newsletter</legend>
+    <label class="subhead">Select the newsletters you would like to receive</label><br>
 
-  <legend>Newsletter</legend>
-  <label for="subhead">Select the newsletters you would like to receive</label><br>
+    <input type="checkbox" id="html_news" value="newsletter" name="newsletter_html">
+    <label for="html_news">HTML News</label><br>
 
-  <input type="checkbox" id="html" value="newsletter_html" name="newsletter_html">
-  <label for="newsletter">HTML News</label><br>
+    <input type="checkbox" id="css" value="newsletter" name="newsletter_css">
+    <label for="css">CSS News</label><br>
 
-  <input type="checkbox" id="css" value="newsletter_css" name="newsletter_css">
-  <label for="css">CSS News</label><br>
+    <input type="checkbox" id="javascript" value="newsletter" name="newsletter_javascript">
+    <label for="javascript">Javascript News</label><br>
 
-  <input type="checkbox" id="javascript" value="newsletter_javascript" name="newsletter_javascript">
-  <label for="javascript">Javascript News</label><br>
+  <label class="subhead">Newsletter format</label><br>
 
-<label for="subhead">Newsletter format</label><br>
+  <input type="radio" id="html" value="format" name="newsletter_format">
+  <label for="html">HTML</label><br>
 
-<input type="radio" id="html" value="format_html" name="newsletter_format">
-<label for="format">HTML</label><br>
+  <input type="radio" id="plain" value="format" name="newsletter_format">
+  <label for="plain">Plain Text</label><br>
 
-<input type="radio" id="plain" value="format_plain" name="newsletter_format">
-<label for="format">Plain Text</label><br>
-
-<label for="subhead">Other topics you&#39;d like to hear about</label><br>
-<textarea id="_topics" name="user_topics"></textarea><br>
-
+  <label class="subhead">Other topics you&#8217;d like to hear about</label><br>
+  <textarea id="_topics" name="user_topics"  placeholder="Not required"></textarea><br>
+</section>
 <button type="submit">Sign Up</button>
 
 <p class="copyright">Copyright The Code Review</p>
         </fieldset>
-
-</fieldset>
 
       </form>
 

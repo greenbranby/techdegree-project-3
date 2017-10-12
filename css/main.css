@@ -29,7 +29,7 @@ p  {
 }
 
 p {
-color: #ccc;
+color: #666;
 font-weight: 300;
 }
 
@@ -54,7 +54,6 @@ legend {
   font-weight: bold;
 }
 
-
 fieldset {
   width: auto;
   border: none;
@@ -66,7 +65,7 @@ fieldset {
     -webkit-padding-after: 0;
 }
 
-input[type="name"],
+input[type="text"],
 input[type="email"],
 input[type="date"],
 input[type="telephone"],
@@ -82,19 +81,42 @@ select {
   outline: 0;
   padding: 25px;
   width: 100%;
-  background-color: #eff0f1;
-  color: #ccc;
+  background-color: #7fd6d2;
+  color: #737272;
   margin-bottom: 30px;
   margin-top: 15px;
 }
-textarea {
-  margin-top: 0;
-}
 
-input[placeholder="Required"] {
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
   font-size: .85em;
   font-style: italic;
   text-align: right;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+border: 2px solid #4ebbb5;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  opacity: 1;
+  transition: opacity .6s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  opacity: .5;
+}
+
+textarea {
+  margin-top: 0;
 }
 
 select[id="state"] {
@@ -103,8 +125,11 @@ select[id="state"] {
   border-radius: 2px;
 }
 
-label[for="newsletter"],
-label[for="format"]{
+label[for="html_news"],
+label[for="css"],
+label[for="javascript"],
+label[for="html"],
+label[for="plain"]{
   margin-left: 30px;
 }
 
@@ -112,16 +137,8 @@ input[type="checkbox"],
 input[type="radio"]{
   margin: 0 0 15px 0;
 }
-input:focus {
-  border: 2px solid #3D6285;
-}
 
- input[type="checkbox"]:checked  {
- background-color: : #5898F4;
-}
-
-
-label[for="subhead"]{
+.subhead{
   display: block;
   padding-top: 15px;
 }
@@ -139,6 +156,23 @@ button {
   font-size: .85em;
   font-style: italic;
   padding-top: 20px;
+}
+
+.newsletter {
+  width: 100%;
+  background-color: #defbfa;
+  margin:0;
+  padding: 20px 20px 0 20px;
+  border-radius: 5px;
+}
+
+section {
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+.heading{
+  padding-top: 65px;
+  margin-bottom: -20px;
 }
 
 @media (min-width:768px){
