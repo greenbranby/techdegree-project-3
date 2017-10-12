@@ -11,7 +11,7 @@ body {
 
 form {
   width: 90%;
-  margin: auto;
+  margin:  auto;
   padding: 5px 0 10px 0;
   border-top: 5px solid ;
 }
@@ -42,6 +42,7 @@ font-weight: 300;
 .head-section {
   width:90%;
   margin: 0 auto;
+  padding: 20px 0;
 }
 
 legend {
@@ -53,20 +54,22 @@ legend {
   font-weight: bold;
 }
 
-fieldset {
-  width: 90%;
-  border: none;
-  margin: 0;
-}
 
-input {
-  color: red;
+fieldset {
+  width: auto;
+  border: none;
+  -webkit-margin-start: 0;
+    -webkit-margin-end:0;
+    -webkit-padding-before: 0;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
+    -webkit-padding-after: 0;
 }
 
 input[type="name"],
 input[type="email"],
 input[type="date"],
-input[type="phone"],
+input[type="telephone"],
 input[type="zipcode"],
 textarea,
 select {
@@ -77,13 +80,15 @@ select {
   height: auto;
   margin: 0;
   outline: 0;
-  padding: 15px;
+  padding: 25px;
   width: 100%;
   background-color: #eff0f1;
   color: #ccc;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
   margin-top: 15px;
+}
+textarea {
+  margin-top: 0;
 }
 
 input[placeholder="Required"] {
@@ -92,24 +97,33 @@ input[placeholder="Required"] {
   text-align: right;
 }
 
-input[type="checkbox"] {
-  float: left;
-  margin-top: 2px;
+select[id="state"] {
+  padding: 6px;
+  height:70px;
+  border-radius: 2px;
 }
 
 label[for="newsletter"],
-label[for="plain_text"]{
+label[for="format"]{
   margin-left: 30px;
-  padding-top: 0;
-}
-:checked {
-  margin-left: 25px;
 }
 
-label {
+input[type="checkbox"],
+input[type="radio"]{
+  margin: 0 0 15px 0;
+}
+input:focus {
+  border: 2px solid #3D6285;
+}
+
+ input[type="checkbox"]:checked  {
+ background-color: : #5898F4;
+}
+
+
+label[for="subhead"]{
   display: block;
-  color:#495d70;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 button {
@@ -127,7 +141,7 @@ button {
   padding-top: 20px;
 }
 
-@@media query (min-width:768px;){
+@media (min-width:768px){
 form {
   max-width: 600px;
   margin: auto;

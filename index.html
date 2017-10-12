@@ -23,16 +23,16 @@
           <legend>Contact Information</legend>
 
           <label for="fullname">Full Name</label>
-          <input required type="name" id="name" name="user_name" placeholder="Required" ><br>
+          <input required type="name" id="fullname" name="user_name" placeholder="Required" ><br>
 
           <label for="email">Email Address</label>
           <input required type="email" id="email" name="email_address" placeholder="Required" ><br>
 
-          <label for="phone">Phone Number</label>
-          <input required type="phone" id="phone" name="phone_number" ><br>
+          <label for="telephone">Phone Number</label>
+          <input required type="telephone" id="telephone" name="phone_number" ><br>
 
           <label for="state" >State</label>
-          <select id="state" name="choose_state" ><br>
+          <select id="state" name="choose_state"><br>
             <option value="choose">Choose State</option>
             <option value="alabama">Alabama</option>
             <option value="alaska">Alaska</option>
@@ -91,28 +91,29 @@
             <input type="zipcode" id="zipcode" name="zipcode_number">
 </fieldset>
 
-<fieldset>
-  <legend>Newsletter</legend>
-  <label>Select the newsletters you would like to receive</label><br>
+<fieldset class="newsletter">
 
-  <input type="checkbox" id="html" value="newsletter_html" name="user_interest">
+  <legend>Newsletter</legend>
+  <label for="subhead">Select the newsletters you would like to receive</label><br>
+
+  <input type="checkbox" id="html" value="newsletter_html" name="newsletter_html">
   <label for="newsletter">HTML News</label><br>
 
-  <input type="checkbox" id="cs" value="newsletter_css" name="user_interest">
-  <label for="newsletter">CSS News</label><br>
+  <input type="checkbox" id="css" value="newsletter_css" name="newsletter_css">
+  <label for="css">CSS News</label><br>
 
-  <input type="checkbox" id="javascript" value="newsletter_javascript" name="user_interest">
-  <label for="newsletter">Javascript News</label><br>
+  <input type="checkbox" id="javascript" value="newsletter_javascript" name="newsletter_javascript">
+  <label for="javascript">Javascript News</label><br>
 
-<label>Newsletter format</label><br>
+<label for="subhead">Newsletter format</label><br>
 
-<input type="checkbox" id="html" value="format_html" name="newsletter_format">
-<label for="newsletter">HTML</label><br>
+<input type="radio" id="html" value="format_html" name="newsletter_format">
+<label for="format">HTML</label><br>
 
-<input type="checkbox" id="plain" value="format_plain" name="newsletter_format">
-<label for="plain_text">Plain Text</label><br>
+<input type="radio" id="plain" value="format_plain" name="newsletter_format">
+<label for="format">Plain Text</label><br>
 
-<label>Other topics you'd like to hear about</label><br>
+<label for="subhead">Other topics you&#39;d like to hear about</label><br>
 <textarea id="_topics" name="user_topics"></textarea><br>
 
 <button type="submit">Sign Up</button>
