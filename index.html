@@ -19,7 +19,7 @@
 
         <form action="index.html" method="post">
 
-        <fieldset>
+        <fieldset class="contact_info">
           <legend>Contact Information</legend>
 
           <label for="name">Full Name</label>
@@ -40,7 +40,7 @@
 
           <label for="state" >State</label>
           <select id="state" name="choose_state">
-            <option value="choose">Choose State</option>
+            <option selected hidden disabled value="choose">Choose State</option>
             <option value="alabama">Alabama</option>
             <option value="alaska">Alaska</option>
             <option value="arizona">Arizona</option>
@@ -112,26 +112,25 @@
     <input type="checkbox" id="javascript" value="newsletter" name="newsletter_javascript">
     <label for="javascript">Javascript News</label><br>
 
-  <label class="subhead">Newsletter format</label><br>
+    <label class="subhead">Newsletter format</label><br>
 
-  <input type="radio" id="html" value="format" name="newsletter_format">
-  <label for="html">HTML</label><br>
+    <input type="radio" id="html" value="format" name="newsletter_format">
+    <label for="html">HTML</label><br>
 
-  <input type="radio" id="plain" value="format" name="newsletter_format">
-  <label for="plain">Plain Text</label><br>
+    <input type="radio" id="plain" value="format" name="newsletter_format">
+    <label for="plain">Plain Text</label><br>
 
-  <label class="subhead">Other topics you&#8217;d like to hear about</label><br>
-  <textarea id="_topics" name="user_topics"  placeholder="Not required"></textarea><br>
+    <label for="_topics" class="subhead">Other topics you&#8217;d like to hear about</label><br>
+    <textarea id="_topics" name="user_topics"  placeholder="Not required"></textarea><br>
+  </fieldset>
 </section>
+
 <button type="submit">Sign Up</button>
 
 <p class="copyright">Copyright The Code Review</p>
-        </fieldset>
+
+
 
       </form>
-
-
-
-
   </body>
 </html>
