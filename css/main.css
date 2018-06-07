@@ -1,3 +1,5 @@
+/*--------------------- BASE STYLES--------------*/
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -6,6 +8,7 @@
 
 body {
   font-family: 'Merriweather', serif;
+  background-color: #C5DDDC;
   color: #2d3945;
 }
 
@@ -31,6 +34,13 @@ p  {
 p {
 color: #666;
 font-weight: 300;
+}
+
+/*--------------------- LAYOUT STYLES--------------*/
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 .header {
@@ -160,7 +170,7 @@ button {
 
 .newsletter {
   width: 100%;
-  background-color: #defbfa;
+  background-color: #E9F5F4;
   margin:0;
   padding: 20px 20px 0 20px;
   border-radius: 5px;
