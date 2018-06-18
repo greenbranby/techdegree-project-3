@@ -7,8 +7,8 @@
 }
 
 body {
-  font-family: 'Merriweather', serif;
-  background-color: #C5DDDC;
+  font-family: 'Cardo', serif;
+  background-color: #F8F5EE;
   color: #2d3945;
 }
 
@@ -16,10 +16,10 @@ form {
   width: 90%;
   margin:  auto;
   padding: 5px 0 10px 0;
-  border-top: 5px solid ;
 }
 
 h1 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.625em;
   text-transform: uppercase;
   color: #fff;
@@ -46,13 +46,13 @@ main {
 .header {
   background-color: #2d3945;
   margin:0;
-  padding: 20px;
+  padding: 40px;
 }
 
 .head-section {
   width:90%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 0 10px 0px;
 }
 
 legend {
@@ -91,7 +91,7 @@ select {
   outline: 0;
   padding: 25px;
   width: 100%;
-  background-color: #7fd6d2;
+  background-color: #F4EDDD;
   color: #737272;
   margin-bottom: 30px;
   margin-top: 15px;
@@ -107,7 +107,7 @@ textarea::-webkit-input-placeholder{
 input:focus,
 textarea:focus,
 select:focus {
-border: 2px solid #4ebbb5;
+border: 2px solid #E1DDD4;
 }
 
 input[type="text"],
@@ -156,8 +156,8 @@ input[type="radio"]{
 button {
   width: 100%;
   padding: 20px;
-  background-color: #4ebbb5;
-  color: #fff;
+  background-color: #E1DDD4;
+  color: #2d3945;
   border: none;
   border-radius: 5px;
 }
@@ -170,9 +170,9 @@ button {
 
 .newsletter {
   width: 100%;
-  background-color: #E9F5F4;
-  margin:0;
-  padding: 20px 20px 0 20px;
+  background-color: #F8F5EE;
+  margin-top: 10px;
+  padding: 20px 30px 0 30px;
   border-radius: 5px;
 }
 
